@@ -16,9 +16,16 @@
     <h1>Olá, Mundo!</h1>
     <p>Já me livrei da maldição</p>
     <script>
-        window.alert('minha primeira mensagem');
-        window.confirm('Você está gostando do curso? ')
-        window.prompt('Qual seu nome? ')
+        
+        var nome = window.prompt('Qual seu nome?')
+        document.write('Olá <strong>' + nome + '</strong> Seu nome tem <strong>' + nome.length + '</strong> letras ' )
+        document.write('Seu nome em maiúscuas é ${nome.toUpperCase()}')
+
+        /*var n1 = Number.parseFloat(window.prompt("Digite um número: "))
+        var n2 = Number.parseFloat(window.prompt("Digite outro número: "))
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)/*
+
     </script>
 </body>
-</html>
+</html>  
