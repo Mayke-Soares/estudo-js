@@ -8,7 +8,7 @@
     <style>
         body {
             background-color: rgb(183, 183, 235);
-            color: normal black 25pt arial;
+            color: normal black 25pt arial ;
         }
     </style>
 </head>
@@ -18,13 +18,9 @@
     <script>
         
         var nome = window.prompt('Qual seu nome?')
-        document.write('Olá <strong>' + nome + '</strong> Seu nome tem <strong>' + nome.length + '</strong> letras ' )
-        document.write('Seu nome em maiúscuas é ${nome.toUpperCase()}')
-
-        /*var n1 = Number.parseFloat(window.prompt("Digite um número: "))
-        var n2 = Number.parseFloat(window.prompt("Digite outro número: "))
-        var s = n1 + n2
-        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)/*
+        document.write(`Olá <strong>${nome}</strong>, Seu nome tem <strong>${nome.length}</strong> letras. `)
+        document.write(`Seu nome em maiúsculas é <strong>${nome.toUpperCase()}</strong>`)
+        document.write(`Seu nome em minúsculas é <strong>${nome.toLowerCase()}</strong>`)
 
     </script>
 </body>
