@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro programa</title>
-
+    <title>Primeiros passos com DOM</title>
     <style>
         body {
-            background-color: rgb(183, 183, 235);
-            color: normal black 25pt arial ;
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt arial;
         }
     </style>
 </head>
 <body>
-    <h1>Olá, Mundo!</h1>
-    <p>Já me livrei da maldição</p>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado </p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
     <script>
-        
-        var nome = window.prompt('Qual seu nome?')
-        document.write(`Olá <strong>${nome}</strong>, Seu nome tem <strong>${nome.length}</strong> letras. `)
-        document.write(`Seu nome em maiúsculas é <strong>${nome.toUpperCase()}</strong>`)
-        document.write(`Seu nome em minúsculas é <strong>${nome.toLowerCase()}</strong>`)
-
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        //d.innerText = 'Estou aguardando...'
+        window.document.getElementById('msg').innerText = 'Olá'
     </script>
 </body>
 </html>
