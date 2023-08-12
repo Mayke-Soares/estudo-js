@@ -5,4 +5,3 @@ if (país != 'Brasil') {
 } else {
     console.log('Você é Brasileiro')
 }
-
