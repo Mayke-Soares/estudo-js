@@ -3,34 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiros passos com DOM</title>
+    <title>Eventos DOM</title>
+  
     <style>
-        body {
-            background: rgb(68, 125, 199);
+        div#area {
+            background: rgb(42, 139, 42);
             color: white;
-            font: normal 18pt arial;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            font-size: 30px;
         }
     </style>
 </head>
 <body>
-    <h1>Iniciando estudos com DOM</h1>
-    <p>Aqui vai o resultado </p>
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
-    <div id="msg">Clique em mim</div>
-    <script>
-        var corpo = window.document.body
-        var p1 = window.document.getElementsByTagName('p')[1]
-        
-        var d = window.document.getElementById('msg')
-        d.style.background = 'green'
-        d.innerText = 'Estou aguardando...'
-        
-        var d = window.document.getElementsByName('msg')[0]
-        d.innerText = 'Olá!' 
+    <div id="area">
+        interaja...
+    </div>
 
-        var d = window.document.querySelector('div.msg')
-        d.style.color = 'blue'
-        
+   
+    <script> 
+      
+        var a = window.document.getElementById('area')
+        a.addEventListener('click',clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {  
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+        function entrar() {
+            a.innerText = 'entrou!'
+        }
+        function sair() {
+            a.innerText = 'saiu!'
+            a.style.background = 'green'
+        }
     </script>
 </body>
 </html>
