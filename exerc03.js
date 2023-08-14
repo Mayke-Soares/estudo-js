@@ -1,3 +1,5 @@
+//CODIÇÃO COMPOSTA - JavaScript     
+
 var idade = 
 if (idade < 16) {
     console.log('Não vota ')
