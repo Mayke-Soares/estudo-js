@@ -8,5 +8,4 @@ if (idade < 16) {
     console.log('Seu voto é opcional')
 } else {
     console.log('Seu voto é obrigatório') 
-
 }
