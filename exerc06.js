@@ -1,4 +1,4 @@
-// Estrutura de repetição usando while
+// ESTRUTURA DE REPETIÇÃO USANDO WHILE
 
 var c = 1 // Variávei c recebe o valor de 1
 
