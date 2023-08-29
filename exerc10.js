@@ -6,6 +6,6 @@ console.log(valores)
 //para cada posição em num
 //for(let pos in valores) {
 //console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
-let pos = valores.indexOf(8)
+let pos = valores.indexOf(8) // busca o elemento dentre os outros e mostra sua posilção. 
 console.log(`O valor 8 está na posição ${pos}`)
 
